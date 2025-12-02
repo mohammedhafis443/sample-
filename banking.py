@@ -7,31 +7,30 @@ def bank():
     print("check balence")
 
 def createaccount():
-    accno=(input("enter your account no"))
-    name=input("enter your name")
+    accno=(input("enter your account no:"))
+    name=input("enter your name:")
     
     #balence=0.00#local variable
     print("created account succesfully")
     
 def deposit():
     global balance
-    acc_no=input("enter your account no")
-    amount=float(input("enter your amount"))
+    acc_no=input("enter your account no:")
+    amount=float(input("enter your amount:"))
     balance+=amount
     
     print("succesfully deposited:$",balance)
     
 def withdraw():
     global balance
-    acc_no=input("enter your account no")
-    amount=float(input("enter amount"))
+    acc_no=input("enter your account no:")
     balance-=amount
     print(amount)
     #balence=0
     print("withdraw amount succesfully:$",balance)
     
 def checkbalance():
-    acc_no=input("enter no")
+    acc_no=input("enter no:")
     print("your balance :",balance)
     
     #balence= deposite+amount
@@ -39,7 +38,7 @@ def checkbalance():
 def banking():
     while True:
         bank()
-        choice=input("enter your choice")
+        choice=input("enter your choice:")
         if choice=="5":
             print("exit")
             break
